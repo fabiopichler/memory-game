@@ -1,0 +1,36 @@
+
+set(SRC_FILES
+    src/main.c
+    src/App.c
+    src/App.h
+    src/base/Window.c
+    src/base/Window.h
+    src/base/Graphics.c
+    src/base/Graphics.h
+    src/base/Texture.c
+    src/base/Texture.h
+    src/base/Button.c
+    src/base/Button.h
+    src/base/Rectangle.c
+    src/base/Rectangle.h
+    src/base/Box.h
+    src/base/Box.c
+    src/base/SceneManager.h
+    src/base/SceneManager.c
+    src/base/DataZipFile.h
+    src/base/DataZipFile.c
+    src/base/LinkedList.h
+    src/base/LinkedList.c
+    src/base/private/Timer.h
+    src/base/private/Timer.c
+    src/scene_game/SceneGameRect.h
+    src/scene_game/SceneGame.c
+    src/scene_game/SceneGame.h
+    src/scene_game/GameBoard.c
+    src/scene_game/GameBoard.h
+    src/scene_game/Sidebar.c
+    src/scene_game/Sidebar.h
+    src/scene_game/Footer.c
+    src/scene_game/Footer.h
+    src/scene_game/Header.c
+    src/scene_game/Header.h)

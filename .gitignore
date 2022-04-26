@@ -1,0 +1,7 @@
+/build*
+/lib
+/bin
+/cmake-*
+.idea
+*.txt.user*
+.env.cmake
