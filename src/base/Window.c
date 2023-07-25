@@ -46,7 +46,7 @@ Window *Window_New(int width, int height, const char *title)
                                 SDL_WINDOWPOS_UNDEFINED,
                                 self->rect.w,
                                 self->rect.h,
-                                SDL_WINDOW_SHOWN);
+                                SDL_WINDOW_HIDDEN);
 
     if (!self->window)
     {
@@ -82,6 +82,11 @@ void Window_SetWindowIcon(Window * const self, const char *filename)
 void Window_SetWindowTitle(Window * const self, const char *title)
 {
     SDL_SetWindowTitle(self->window, title);
+}
+
+void Window_Show(Window * const self)
+{
+    SDL_ShowWindow(self->window);
 }
 
 SDL_Window *Window_GetSDLWindow(Window * const self)

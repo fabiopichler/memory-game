@@ -67,9 +67,10 @@ App *App_New()
     self->graphics = Graphics_New(self->window);
     self->sceneManager = SceneManager_New(self->window, self->graphics);
 
-    Window_SetWindowIcon(self->window, "images/brain_1f9e0.png");
-
     SCENE_MANAGER_GOTO(self->sceneManager, SceneGame);
+
+    Window_SetWindowIcon(self->window, "images/brain_1f9e0.png");
+    Window_Show(self->window);
 
     return self;
 }
